@@ -1,0 +1,4 @@
+使用wallpaper engine的过程中，取消壁纸订阅后，steam会延迟删除订阅的文件，但是这个功能有时会失效，导致一些订阅文件没有被正确删除，日积月累占据大量磁盘空间。
+通过查看wallpaper engine的本地文件，发现订阅文件列表信息是存储在steamapps\common\wallpaper_engine\bin\workshopcache.json文件中的，订阅文件本身是存储在steamapps\workshop\content\431960文件夹下的。
+
+本工具通过对比已订阅和未订阅的壁纸信息，快速删除已经取消订阅的壁纸信息
